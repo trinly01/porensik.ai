@@ -1,0 +1,81 @@
+{
+  "name": "juan-api",
+  "description": "JuanAPI",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "trinly01",
+    "email": "timi.boado@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run eslint && NODE_ENV= yarn run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.13",
+    "@feathersjs/authentication-jwt": "^2.0.7",
+    "@feathersjs/authentication-local": "^1.2.7",
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "@feathersjs/socketio": "^3.2.7",
+    "arraybuffer-to-string": "^1.0.2",
+    "axios": "^0.18.0",
+    "canvas": "^2.6.0",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.1",
+    "express-throttle-bandwidth": "^1.0.1",
+    "feathers-memory": "^3.0.0",
+    "feathers-nedb": "^4.0.0",
+    "feathers-nedb-fuzzy-search": "^1.2.1",
+    "feathers-nedb-puzzy-search": "^1.0.3",
+    "file-extension": "^4.0.5",
+    "formidable": "^1.2.1",
+    "helmet": "^3.15.0",
+    "is-image": "^3.0.0",
+    "jwt-decode": "^2.2.0",
+    "mime-types": "^2.1.24",
+    "multer": "^1.4.1",
+    "nedb": "^1.8.0",
+    "nodemailer": "^6.3.0",
+    "normalize-text": "^2.0.1",
+    "ocrad.js": "^0.0.1",
+    "officeparser": "^2.1.1",
+    "passport-custom": "^1.0.5",
+    "pdfjs-dist": "^2.1.266",
+    "puzzy-search": "^1.0.20",
+    "serve-favicon": "^2.5.0",
+    "tesseract.js": "2.0.0-alpha.13",
+    "typo-js": "^1.0.3",
+    "winston": "^3.0.0",
+    "word-extractor": "^0.3.0",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
